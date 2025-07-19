@@ -11,7 +11,7 @@ This project is dedicated to a simple benchmark for models available through the
 
 The idea of this project is quite simple:
 
-- First, we generate a random tree with `tree_size` nodes and no more than `density` children per node. The number of children is distributed uniformly from 1 to `density`.
+- First, we generate a random tree with `tree_size` nodes and no more than `density` children per node. The number of children is distributed according to limited poisson distribution from 1 to 10 with `lambda = density`.
 
 - Given the tree structure, we generate a **text description** of the tree—basically, an explanation of the connections between nodes.
 
